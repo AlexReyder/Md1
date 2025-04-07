@@ -1,0 +1,45 @@
+.Container{
+	position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.Input{
+	width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  background: rgba(28, 31, 47, 0.16);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #2e344d;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  margin-bottom: 24px;
+  color: #E8E9EA;
+}
+
+.Input::placeholder {
+  color: #495057;
+}
+
+.Input:focus{
+	border: 1px solid #344d2e;
+  outline: 0;
+  background: rgb(17, 20, 31);
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 10px 10px 36px rgb(0, 0, 0, 0.5), -13px -13px 23px rgba(255, 255, 255, 0.03);
+}
+
+.Error{
+	font-size: 12px;
+  color: red !important;
+  position: absolute;
+  left: 10px;
+  bottom: -23px;
+}

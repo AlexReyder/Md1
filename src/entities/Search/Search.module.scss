@@ -1,0 +1,41 @@
+.Container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Search{
+	background-color: var(--s-color);
+	width: 400px;
+	height: 2rem;
+	border-radius: 24px;
+}
+
+.Search:focus{
+	outline: none;
+}
+
+.Button {
+	border: none;
+	background-color: var(--s-color);
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+	right: 2rem;
+}
+
+.Button::before {
+  background-color: #222;
+  content: '';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: background-color 0.2s ease-in-out;
+}
+.Button::before {
+  -webkit-mask: url(/img/search.svg) no-repeat 50% 50%;
+  mask: url(/img/search.svg) no-repeat 50% 50%;
+}

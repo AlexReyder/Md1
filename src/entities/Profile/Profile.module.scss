@@ -1,0 +1,54 @@
+.Profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--s-color);
+  width: 100%;
+  min-width: 5rem;
+  height: 24px;
+  position: relative;
+}
+
+.Profile::before {
+  background-color: var(--s-color);
+  content: '';
+  height: 100%;
+  width: 100%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.Profile:hover::before {
+  transition: background-color 0.2s ease-in-out;
+  background-color: #9466FF;
+}
+
+.Profile:hover {
+  transition: color 0.2s ease-in-out;
+  color: #9466FF;
+}
+
+
+.Profile::before {
+  -webkit-mask: url(/img/profile.svg) no-repeat 50% 50%;
+  mask: url(/img/profile.svg) no-repeat 50% 50%;
+}
+.Container:hover .List{
+	visibility: visible;
+	opacity: 1;
+}
+
+.List {
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	margin-top: 2rem;
+}
+
+.Item{
+
+}

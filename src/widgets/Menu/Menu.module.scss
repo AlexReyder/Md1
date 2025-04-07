@@ -1,0 +1,21 @@
+.Nav{
+	width: 100%;
+	grid-column: 1 / end;
+	align-self: end;
+	background-color: #353535;
+}
+
+.MenuLinks{
+	width: 100%;
+	height: 2.8rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+.MenuLink {
+	text-transform: uppercase;
+	color: var(--s-color);
+}
